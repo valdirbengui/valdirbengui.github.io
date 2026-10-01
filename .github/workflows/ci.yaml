@@ -90,7 +90,7 @@ jobs:
           ${{ matrix.command }} 2>&1 | tee "$OUTPUT"
 
       - name: Resumo
-        if: '!cancelled()'
+        if: "!cancelled()"
         run: |
           {
             if [ "${{ steps.analysis.outputs.skipped }}" = "true" ]; then
@@ -104,4 +104,3 @@ jobs:
               echo '```'
             fi
           } >> "$GITHUB_STEP_SUMMARY"
-
