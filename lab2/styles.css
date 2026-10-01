@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+}
+
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 8px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+}
+
+main {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

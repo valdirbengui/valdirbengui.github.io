@@ -1,0 +1,63 @@
+.imagemlocal{
+    width: 500px;
+}
+body {
+    width: 510px;
+    margin: auto;
+}
+
+main {
+    width: 510px;
+}
+
+.fotografias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fotografias img {
+    width: 120px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+footer {
+    width: 510px;
+    text-align: left;
+}
+
+.poema p:nth-child(1) {
+    color: red;
+}
+
+.poema p:nth-child(2) {
+    color: blue;
+}
+
+.poema p:nth-child(3) {
+    color: green;
+}
+
+.poema p:nth-child(4) {
+    color: orange;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    color: blue;
+}
+
+td {
+    color: black;
+}
