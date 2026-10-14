@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  
   text-align: center;
   margin: 40px;
 }
@@ -10,7 +10,6 @@ header {
 
 button {
   padding: 10px 20px;
-  cursor: pointer;
 }
 
 #area {
@@ -23,6 +22,4 @@ button {
   justify-content: center;
 }
 
-img {
-  margin-top: 20px;
-}
+
