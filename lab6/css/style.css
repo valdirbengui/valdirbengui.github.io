@@ -1,19 +1,15 @@
-
-main{
-    background-color: chocolate;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
-
+main {
+  background-color: chocolate;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
-section{
-    border: 25px solid gray;
-    padding: 10px;
-    margin: 10px;
-
+section {
+  border: 25px solid gray;
+  padding: 10px;
+  margin: 10px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    
+form {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,21 +1,21 @@
-p{
-    margin-bottom: 25px;
+p {
+  margin-bottom: 25px;
 }
 #mensagem {
-    display: block;
+  display: block;
 }
 
 #container {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    height: 200px;
-    background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 200px;
+  background-color: lightgray;
 }
 
 .bola {
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-    border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 50%;
 }
