@@ -1,90 +1,98 @@
+
 <!doctype html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleslab2.css" />
-    <link rel="stylesheet" href="../lab2/styles.css" />
-    <title>Cidade</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleslab2.css">
+    <title>Multimédia - Luanda</title>
+</head>
 
-  <body>
+<body>
+
     <header>
-      <h1>Luanda</h1>
+        <h1>Luanda</h1>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="local.html">Localização</a>
-        <a href="multimedia.html">Multimédia</a>
-        <a href="info.html">Informação</a>
-      </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+        </nav>
     </header>
 
     <main>
-      <h2>Multimédia</h2>
 
-      <p>Nesta página encontra conteúdos multimédia.</p>
+        <section class="imagem-destaque">
+            <img src="../images/imagem luanda.webp" alt="Vista de Luanda">
 
-      <p>
-        <a href="#fotografias">Fotografias</a>
-        <a href="#video">Vídeo</a>
-        <a href="#poesia">Poesia</a>
-      </p>
+            <h2>Luanda, onde a história encontra o mar.</h2>
+        </section>
 
-      <section>
-        <h3 id="fotografias">Fotografias</h3>
+        <section id="fotografias" class="secao-fotografias">
+            <h2>Fotografias</h2>
 
-        <div class="fotografias">
-          <img src="../lab2/images/foto1.jpeg" alt="Vista da cidade" />
-          <img src="../lab2/images/foto2.jpeg" alt="Luanda" />
-          <img src="../lab2/images/foto3.jpeg" alt="Rua de Luanda" />
-          <img src="../lab2/images/foto4.jpeg" alt="Edifício em Luanda" />
-          <img src="../lab2/images/foto5.jpeg" alt="Paisagem de Luanda" />
-          <img src="../lab2/images/foto6.jpeg" alt="Cidade de Luanda" />
-          <img
-            src="../lab2/images/foto7.jpeg"
-            alt="Edifício de Luanda à noite"
-          />
-          <img src="../lab2/images/foto8.jpeg" alt="Luanda" />
-        </div>
-      </section>
+            <div class="fotografias">
+                <img src="../lab2/images/foto1.jpeg" alt="Vista da cidade">
+                <img src="../lab2/images/foto2.jpeg" alt="Luanda">
+                <img src="../lab2/images/foto3.jpeg" alt="Rua de Luanda">
+                <img src="../lab2/images/foto4.jpeg" alt="Edifício em Luanda">
+                <img src="../lab2/images/foto5.jpeg" alt="Paisagem de Luanda">
+                <img src="../lab2/images/foto6.jpeg" alt="Cidade de Luanda">
+                <img src="../lab2/images/foto7.jpeg" alt="Edifício de Luanda à noite">
+                <img src="../lab2/images/foto8.jpeg" alt="Luanda">
+            </div>
+        </section>
 
-      <section>
-        <h3 id="video">Vídeo</h3>
+        <section id="video" class="secao-video">
+            <h2>Vídeo sobre Luanda</h2>
 
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/yc8IfT-L4cw?si=6dHHFgpKScqv8bQc"
-          title="Vídeo sobre Luanda"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </section>
+            <iframe
+                src="https://www.youtube.com/embed/yc8IfT-L4cw"
+                title="Vídeo sobre Luanda"
+                allowfullscreen>
+            </iframe>
+        </section>
 
-      <section>
-        <h3 id="poesia">Poesia</h3>
+        <section id="poesia" class="secao-poesia">
+            <h2>Poesia</h2>
 
-        <div class="poema">
-          <p>Luanda, cidade junto ao mar,</p>
-          <p>onde o sol começa a brilhar,</p>
-          <p>entre ruas, sonhos e calor,</p>
-          <p>terra de vida, força e amor.</p>
-        </div>
-      </section>
+            <div class="poema">
+                <p>Luanda, cidade junto ao mar,</p>
+                <p>onde o sol começa a brilhar,</p>
+                <p>entre ruas, sonhos e calor,</p>
+                <p>terra de vida, força e amor.</p>
+            </div>
+        </section>
+
+        <section class="video-fundo">
+
+            <video autoplay muted loop playsinline>
+                <source src="../images/video-luanda.mp4" type="video/mp4">
+                O teu navegador não suporta vídeos.
+            </video>
+
+            <div class="video-texto">
+                <h2>Luanda nunca para.</h2>
+                <p>Uma cidade de energia, cultura e movimento.</p>
+            </div>
+
+        </section>
+
+        <section class="parallax">
+
+            <div class="parallax-texto">
+                <h2>A beleza de Luanda</h2>
+                <p>Entre o oceano, a cidade e as suas histórias.</p>
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-      <p>Luanda, 2026</p>
+        <p>Luanda, 2026</p>
     </footer>
-  </body>
+
+</body>
 </html>

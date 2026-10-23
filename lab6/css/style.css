@@ -1,5 +1,8 @@
+body{
+  background-color: brown;
+}
 main {
-  background-color: chocolate;
+  background-color: rgb(57, 18, 211);
   margin: 20px;
   padding: 10px;
   border-radius: 10px;

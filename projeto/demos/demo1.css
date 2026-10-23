@@ -1,0 +1,12 @@
+
+h1:first-child {
+    color: blue;
+}
+
+body > ul > li {
+    color: red;
+}
+
+ul > ul > li {
+    color: green;
+}

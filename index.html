@@ -1,42 +1,179 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Primeira página</title>
-  </head>
-  <body>
-    <header><h1>Primeira página web!</h1></header>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portefólio | Desenvolvimento Web</title>
+</head>
+
+<body>
+
     <main>
-      <p>Eis a minha primeira página web!</p>
-      <p>
-        Na unidade curricular de
-        <a
-          href="http://moodle.ensinilusofona.pt/course/view/.php?id=11232"
-          target="_blank"
-        >
-          desenvolvimento de interface web
-        </a>
-        abordaremos as seguintes tecnologias web &#127760;:
-      </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-      </ul>
-      <p>iremos criar soluçoes criativas</p>
-      <ul>
-        <li><a href="lab1/index.html">lab1</a></li>
-        <li><a href="lab2/index.html">lab2</a></li>
-        <li><a href="lab3/index.html">lab3</a></li>
-        <li><a href="lab4/index.html">lab4</a></li>
-        <li><a href="lab5/index.html">lab5</a></li>
-        <li><a href="lab6/index.html">lab6</a></li>
-      </ul>
-      <img src="images/image.svg" alt="Desenvolvimento de interfaces web" />
+
+        <section id="inicio" class="hero">
+
+            <nav class="menu">
+                <a href="#inicio" class="logo">VB.</a>
+
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#disciplina">Interfaces Web</a></li>
+                    <li><a href="projeto/demos.html">Demos</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-conteudo">
+                <p class="subtitulo">ESTUDANTE DE ENGENHARIA INFORMÁTICA</p>
+
+                <h1>
+                    Transformo ideias em
+                    <span>soluções digitais.</span>
+                </h1>
+
+                <p class="descricao">
+                    Bem-vindo à minha página pessoal. Aqui partilho os meus
+                    projetos, exercícios e aprendizagens no desenvolvimento
+                    de interfaces web.
+                </p>
+
+                <a href="#projetos" class="botao">
+                    Explorar projetos &rarr;
+                </a>
+            </div>
+
+            <p class="indicacao-scroll">
+                ↓ Explora a página
+            </p>
+
+        </section>
+
+        <section id="projetos" class="projetos">
+
+            <div class="secao-cabecalho">
+                <p class="subtitulo">O MEU TRABALHO</p>
+                <h2>Projetos e laboratórios</h2>
+                <p>
+                    Alguns dos exercícios e projetos desenvolvidos ao longo
+                    da minha aprendizagem.
+                </p>
+            </div>
+
+            <div class="projetos-lista">
+
+                <article class="projeto-card">
+                    <span class="numero">01</span>
+                    <h3>Laboratório 1</h3>
+                    <p>
+                        Primeiros passos na construção de páginas web
+                        com HTML e estrutura semântica.
+                    </p>
+                    <a href="lab1/index.html">Ver projeto &rarr;</a>
+                </article>
+
+                <article class="projeto-card">
+                    <span class="numero">02</span>
+                    <h3>Laboratório 2</h3>
+                    <p>
+                        Estilização de páginas, cores, tipografia
+                        e organização de elementos com CSS.
+                    </p>
+                    <a href="lab2/index.html">Ver projeto &rarr;</a>
+                </article>
+
+                <article class="projeto-card">
+                    <span class="numero">03</span>
+                    <h3>Laboratório 3</h3>
+                    <p>
+                        Desenvolvimento de páginas interativas
+                        com JavaScript.
+                    </p>
+                    <a href="lab3/index.html">Ver projeto &rarr;</a>
+                </article>
+
+                <article class="projeto-card">
+                    <span class="numero">04</span>
+                    <h3>Laboratório 4</h3>
+                    <p>
+                        Exercícios e experiências de desenvolvimento
+                        de interfaces web.
+                    </p>
+                    <a href="lab4/index.html">Ver projeto &rarr;</a>
+                </article>
+
+                <article class="projeto-card">
+                    <span class="numero">05</span>
+                    <h3>Laboratório 5</h3>
+                    <p>
+                        Aplicação dos conhecimentos adquiridos
+                        na unidade curricular.
+                    </p>
+                    <a href="lab5/index.html">Ver projeto &rarr;</a>
+                </article>
+
+                <article class="projeto-card">
+                    <span class="numero">06</span>
+                    <h3>Laboratório 6</h3>
+                    <p>
+                        Continuação da aprendizagem e exploração
+                        de novas técnicas de desenvolvimento web.
+                    </p>
+                    <a href="lab6/index.html">Ver projeto &rarr;</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="disciplina" class="disciplina">
+
+            <div class="disciplina-texto">
+                <p class="subtitulo">A MINHA APRENDIZAGEM</p>
+
+                <h2>Interfaces Web</h2>
+
+                <p>
+                    A unidade curricular de Desenvolvimento de Interfaces Web
+                    permite compreender como construir páginas web utilizando
+                    HTML, CSS e JavaScript.
+                </p>
+
+                <p>
+                    Ao longo da disciplina, desenvolvo competências na
+                    estruturação de conteúdos, na criação de layouts
+                    responsivos e na implementação de interfaces interativas.
+                </p>
+
+                <p>
+                    O meu objetivo é criar experiências digitais acessíveis,
+                    funcionais e visualmente apelativas.
+                </p>
+            </div>
+
+            <div class="wordcloud">
+                <span class="palavra grande">HTML</span>
+                <span class="palavra media">CSS</span>
+                <span class="palavra grande">JavaScript</span>
+                <span class="palavra pequena">Web Design</span>
+                <span class="palavra media">Responsividade</span>
+                <span class="palavra pequena">Acessibilidade</span>
+                <span class="palavra media">React</span>
+                <span class="palavra pequena">Interfaces</span>
+                <span class="palavra grande">Frontend</span>
+            </div>
+
+            <footer>
+                <p>Universidade Lusófona · 2026</p>
+                <a href="#inicio">Voltar ao início ↑</a>
+            </footer>
+
+        </section>
+
     </main>
-    <footer>Universidade Lusofona, 2026</footer>
-  </body>
+
+</body>
 </html>

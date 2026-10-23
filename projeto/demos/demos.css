@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: green;
+}
+
+.card a {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

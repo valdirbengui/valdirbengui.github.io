@@ -1,77 +1,592 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  background-color: white;
-  width: 900px;
-  margin: auto;
+    background-color: white;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: green;
-  color: white;
-  text-align: center;
-  padding: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 nav {
-  background-color: black;
-  text-align: center;
-  padding: 8px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 nav a {
-  color: white;
-  margin: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+nav a:hover {
+    background-color: green;
+    transform: translateY(-3px);
 }
 
 main {
-  background-color: white;
-  margin: 10px;
-  padding: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
 img {
-  width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagemlocal {
+    width: 500px;
+}
+
+.imagem-destaque {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imagem-destaque img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s, transform 0.8s;
+}
+
+.imagem-destaque:hover img {
+    filter: brightness(0.75);
+    transform: scale(1.03);
+}
+
+.imagem-destaque h2 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+.secao-fotografias {
+    min-height: 100vh;
+    background-color: #e8f4ff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .fotografias {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    flex: 1;
+    align-content: center;
 }
 
 .fotografias img {
-  width: 150px;
-  border-radius: 50px;
+    width: 22%;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s, box-shadow 0.5s, border-radius 0.5s;
+}
+
+.fotografias img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.secao-video {
+    min-height: 100vh;
+    background-color: #fff0df;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-video iframe {
+    width: 80%;
+    max-width: 560px;
+    height: 60vh;
+    border: none;
+}
+
+.secao-poesia {
+    min-height: 100vh;
+    background-color: #e6f5e9;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poema {
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 2;
+}
+
+.poema p {
+    transition: transform 0.4s, font-size 0.4s;
+}
+
+.poema p:hover {
+    transform: scale(1.05);
+    font-size: 24px;
+}
+
+.secao-fotografias h2,
+.secao-video h2,
+.secao-poesia h2 {
+    transition: color 0.4s, transform 0.4s;
+}
+
+.secao-fotografias h2:hover,
+.secao-video h2:hover,
+.secao-poesia h2:hover {
+    color: #0879ff;
+    transform: translateX(10px);
 }
 
 .poema p:nth-child(1) {
-  color: red;
+    color: red;
 }
 
 .poema p:nth-child(2) {
-  color: blue;
+    color: blue;
 }
 
 .poema p:nth-child(3) {
-  color: green;
+    color: green;
 }
 
 .poema p:nth-child(4) {
-  color: orange;
+    color: orange;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.secao-fotografias,
+.secao-video,
+.secao-poesia {
+    animation: aparecer 1s ease;
 }
 
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 th,
 td {
-  border: 1px solid black;
-  padding: 8px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.localizacao-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.localizacao-conteudo p {
+    flex: 1;
+    line-height: 1.8;
+}
+
+.localizacao-conteudo iframe {
+    flex: 1;
+    width: 50%;
+    height: 350px;
+    border: none;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "dados imagem1 vazio1"
+        "curiosidades vazio2 imagem2"
+        "vazio3 imagem3 imagem2";
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.info-dados {
+    grid-area: dados;
+    background-color: #e8f4ff;
+    padding: 20px;
+}
+
+.info-imagem {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagem-1 {
+    grid-area: imagem1;
+}
+
+.imagem-2 {
+    grid-area: imagem2;
+}
+
+.imagem-3 {
+    grid-area: imagem3;
+}
+
+.info-imagem img {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.info-imagem img:hover {
+    transform: scale(1.08);
+}
+
+.info-vazio {
+    background-color: transparent;
+}
+
+.info-grid h3 {
+    margin-bottom: 15px;
+}
+
+.info-dados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-dados th,
+.info-dados td {
+    border: 1px solid #b8cde0;
+    padding: 8px;
+    text-align: left;
+}
+
+.info-curiosidades {
+    grid-area: curiosidades;
+    background-color: #fff0df;
+    padding: 20px;
+}
+
+.info-curiosidades ul {
+    padding-left: 20px;
+}
+
+.info-curiosidades li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.video-fundo {
+    position: relative;
+    height: 100vh;
+    min-height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #172033;
+    padding: 0;
+}
+
+.video-fundo video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.video-fundo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
+}
+
+.video-texto {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.video-texto h2 {
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+.video-texto p {
+    font-size: 20px;
+}
+
+.parallax {
+    height: 100vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5)
+    ), url("../images/imagem luanda.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-texto {
+    padding: 20px;
+}
+
+.parallax-texto h2 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+.parallax-texto p {
+    font-size: 20px;
+}
+
+.video-texto h2,
+.parallax-texto h2 {
+    transition: transform 0.5s, color 0.5s;
+}
+
+.video-texto h2:hover,
+.parallax-texto h2:hover {
+    transform: scale(1.08);
+    color: #9acbff;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 12px;
+        background-color: #222;
+    }
+
+    nav a:hover {
+        background-color: green;
+    }
+
+    main {
+        margin: 0;
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .imagemlocal {
+        width: 100%;
+    }
+
+    .imagem-destaque {
+        height: 75vh;
+    }
+
+    .imagem-destaque img {
+        height: 100%;
+    }
+
+    .imagem-destaque h2 {
+        font-size: 8vw;
+    }
+
+    .secao-fotografias {
+        padding: 25px 15px;
+    }
+
+    .fotografias img {
+        width: 100%;
+        max-width: none;
+        height: 200px;
+    }
+
+    .secao-video {
+        padding: 25px 15px;
+    }
+
+    .secao-video iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .secao-poesia {
+        padding: 25px 15px;
+    }
+
+    .poema {
+        font-size: 18px;
+    }
+
+    .poema p:hover {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        overflow-wrap: anywhere;
+    }
+
+    .localizacao-conteudo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .localizacao-conteudo p {
+        width: 100%;
+    }
+
+    .localizacao-conteudo iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "dados dados"
+            "imagem1 imagem2"
+            "curiosidades curiosidades"
+            "imagem3 vazio1";
+        gap: 12px;
+    }
+
+    .info-vazio {
+        display: none;
+    }
+
+    .info-imagem img {
+        min-height: 140px;
+    }
+
+    .video-fundo {
+        height: 75vh;
+        min-height: 400px;
+    }
+
+    .video-texto h2 {
+        font-size: 10vw;
+    }
+
+    .video-texto p {
+        font-size: 16px;
+    }
+
+    .parallax {
+        height: 75vh;
+        min-height: 400px;
+        background-attachment: scroll;
+    }
+
+    .parallax-texto h2 {
+        font-size: 9vw;
+    }
+
+    .parallax-texto p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "dados"
+            "imagem1"
+            "curiosidades"
+            "imagem2"
+            "imagem3";
+    }
 }

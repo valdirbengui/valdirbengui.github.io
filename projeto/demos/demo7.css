@@ -1,0 +1,56 @@
+
+div.contentor {
+    margin: 20px;
+    height: 500px;
+    background-color: purple;
+    display: grid;
+
+    grid-template-areas:
+        'header header header'
+        'menu main aside'
+        'menu footer footer';
+
+    gap: 10px;
+    padding: 10px;
+
+    grid-template-columns: 20vw 3fr 2fr;
+    grid-template-rows: 15vh 1fr 60px;
+}
+
+header {
+    grid-area: header;
+    background-color: plum;
+}
+
+nav {
+    grid-area: menu;
+    background-color: plum;
+}
+
+main {
+    grid-area: main;
+    background-color: plum;
+}
+
+aside {
+    grid-area: aside;
+    background-color: plum;
+}
+
+footer {
+    grid-area: footer;
+    background-color: plum;
+}
+
+@media (max-width: 600px) {
+    div.contentor {
+        background-color: khaki;
+
+        grid-template-areas:
+            'header'
+            'menu'
+            'main'
+            'aside'
+            'footer';
+    }
+}
