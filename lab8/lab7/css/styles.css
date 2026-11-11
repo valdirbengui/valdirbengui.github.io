@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #800080;
+    color: white;
+}
+
+/* Cabeçalho */
+
+header {
+    background: #57005c;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 24px;
+    color: white;
+}
+
+/* Conteúdo principal */
+
+main {
+    width: 95%;
+    margin: 25px auto;
+}
+
+/* Filtros e pesquisa */
+
+#bla {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+#bla label {
+    font-size: 13px;
+}
+
+#bla select,
+#bla input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Títulos */
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+/* Produtos */
+
+#produtos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#produtos article {
+    background: white;
+    color: black;
+    width: 220px;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#produtos img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+#produtos h3 {
+    font-size: 16px;
+}
+
+#produtos p {
+    font-size: 13px;
+}
+
+button {
+    cursor: pointer;
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background: #eee;
+    color: black;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* Secção do carrinho */
+
+main > section:last-child {
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+main > section:last-child h2 {
+    color: black;
+    margin-top: 0;
+}
+
+/* Produtos selecionados */
+
+#produtos-selecionados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#produtos-selecionados article {
+    background: white;
+    color: black;
+    width: 180px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #eee;
+}
+
+#produtos-selecionados img {
+    width: 100%;
+    height: 85px;
+    object-fit: contain;
+}
+
+#produtos-selecionados h3 {
+    font-size: 14px;
+}
+
+#produtos-selecionados p {
+    font-size: 13px;
+}
+
+/* Total do carrinho */
+
+main > section:last-child > h3 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+/* Finalização da compra */
+
+#finalizar-compra {
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
+
+#finalizar-compra p {
+    margin: 10px 0;
+}
+
+#finalizar-compra input[type="text"] {
+    width: 130px;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+#finalizar-compra input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+#finalizar-compra button {
+    margin: 5px;
+    padding: 5px 15px;
+}
+
+#finalizar-compra h3 {
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+#valor-final,
+#referencia-pagamento {
+    font-weight: bold;
+}
+
+/* Telemóveis */
+
+@media (max-width: 650px) {
+
+    #bla {
+        flex-wrap: wrap;
+    }
+
+    #bla select,
+    #bla input {
+        width: 100%;
+    }
+
+    #produtos article {
+        width: 45%;
+    }
+
+    #produtos-selecionados article {
+        width: 45%;
+    }
+}

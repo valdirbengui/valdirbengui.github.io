@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Loja Deisi</h1>
+    </header>
+
+    <main>
+        <section id="bla">
+
+            <label>Categoria</label>
+            <select id="categoria">
+                <option value="todas">Todas</option>
+                <option value="T-shirts">T-shirts</option>
+                <option value="Canecas">Canecas</option>
+                <option value="Meias">Meias</option>
+            </select>
+
+            <label>Ordenar</label>
+            <select id="ordenar">
+                <option value="todos" selected>Todos</option>
+                <option value="Preço Crescente">Preço Crescente</option>
+                <option value="Preço Decrescente">Maior preço</option>
+            </select>
+
+            <label>Procurar</label>
+            <input type="text" id="pesquisar"
+                   placeholder="Pesquisar produtos...">
+
+        </section>
+
+        <h2>Selecione os seus Produtos</h2>
+
+        <div id="produtos"></div>
+
+        <section>
+            <h2>Produtos Selecionados</h2>
+
+            <div id="produtos-selecionados"></div>
+
+            <h3>
+                Custo total:
+                <span id="custo-total">0</span> €
+            </h3>
+
+            <!-- Finalizar compra -->
+
+            <div id="finalizar-compra">
+
+                <p>
+                    Nome:
+                    <input type="text" id="nome">
+                </p>
+
+                <p>
+                    És estudante da DEISI?
+                    <input type="checkbox" id="estudante">
+                </p>
+
+                <p>
+                    Cupão de desconto:
+                    <input type="text" id="cupao">
+                </p>
+
+                <button id="comprar">Comprar</button>
+
+                <h3>
+                    Valor final:
+                    <span id="valor-final">0.00 €</span>
+                </h3>
+
+                <p>
+                    Referência de pagamento:
+                    <span id="referencia-pagamento"></span>
+                </p>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylessss.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+  <input type="text" id="nome" placeholder="insira o nome">
+  <input type="number" id="idade" placeholder="insira a idade">  
+  <button>Registar</button>
+</main>
+    
+    <script>
+ 
+  url = "https://amigos.pw.deisi.ulusofona.pt/amigos"
+  const ul = document.createElement("ul")
+  document.body.append(ul)
+  let contador=0
+
+  fetch(url)
+    .then(response => {
+      return response.json();
+    })
+   
+    .then(data => {
+      console.log(data);
+      data.forEach(element => {
+        const elemento=document.createElement("li")
+        elemento.textContent=element.nome
+        ul.append(elemento)
+
+        
+        
+      });
+      
+    })
+ 
+    .catch(error => {
+      console.log(error.message);
+    }); 
+</script>
+    
+</body>
+</html>

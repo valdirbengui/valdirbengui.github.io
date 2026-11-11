@@ -1,35 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <header>
-    <h1>Loja</h1>
-    <nav>
-        <ul>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#cesto">Cesto</a></li>
-        </ul>
-    </nav>
+        <h1>Loja</h1>
     </header>
 
-<main>
+    <main>
+        <h2>Selecione os seus Produtos</h2>
 
-    <section id="produtos">
-    </section>
+        <div id="produtos"></div>
 
-    <section id="cesto">
-    </section>
+        <section>
+            <h2>Produtos Selecionados</h2>
 
-</main>
+            <div id="produtos-selecionados"></div>
 
-<footer></footer>
+            <h3>Custo total: <span id="custo-total">0</span> €</h3>
+        </section>
+    </main>
 
-<script src="js/produtos.js"></script>
-    
+    <script src="js/produtos.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
